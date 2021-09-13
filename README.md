@@ -26,7 +26,7 @@ There are 2 choices for the alternative java (providing /usr/bin/java).
 
 Press <enter> to keep the current choice[*], or type selection number: 2
 
-$ bin/buildit localhost development
+$ bin/buildit localhost development     # now build
 ```
 Now you should have built JikesRVM, use the same container everytime.
 ```
