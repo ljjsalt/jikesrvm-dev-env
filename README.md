@@ -6,7 +6,7 @@
 3. Clone this repo.
 
 ```
-$ cd path\to\repo
+$ cd path/to/repo
 
 $ docker build -t name_of_image .        # build an image, replace the name by anything
 $ docker run --name name_of_container -it name_of_image /bin/bash      # run the image in an new container, give it a name
