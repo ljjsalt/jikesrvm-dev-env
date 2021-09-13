@@ -12,6 +12,7 @@ $ docker build -t name_of_image .        # build an image, replace the name by a
 $ docker run --name name_of_container -it name_of_image /bin/bash      # run the image in an new container, give it a name
 
 ### inside container ###
+$ cd
 $ git clone https://github.com/JikesRVM/JikesRVM.git              # clone JikesRVM's repository
 $ cd jikesrvm
 
