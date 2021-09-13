@@ -1,4 +1,31 @@
-# MMTk Dependencies
+# HOW TO BUILD JikesRVM
+## Follow the Instructions to build a development environment for [JikesRVM](https://github.com/mmtk/mmtk-jikesrvm).
+
+1. Install Docker on your device.
+2. Open the terminal
+3. Clone the repo.
+
+```
+$ cd path\to\repo
+$ docker build -t name_of_image .        # build an image, replace the name by anything
+$ docker run --name name_of_container -it name_of_image /bin/bash      # run the image in an new container, give it a name
+$ git clone https://github.com/JikesRVM/JikesRVM.git              # clone JikesRVM's repository
+$ cd jikesrvm
+$ update-alternatives --config java
+Press <enter> to keep the current choice[*], or type selection number: q
+There are 2 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                            Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      auto mode
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      manual mode
+  2            /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java   1081      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 2
+$ bin/buildit localhost development
+```
+
+## MMTk Dependencies
 
 This repo provides a docker file which lists the dependencies of [MMTk](https://github.com/mmtk/mmtk-core) and its bindings for [V8](https://github.com/mmtk/mmtk-v8), [OpenJDK](https://github.com/mmtk/mmtk-openjdk) and [JikesRVM](https://github.com/mmtk/mmtk-jikesrvm).
 
@@ -19,7 +46,3 @@ As in [Dockerfile](https://github.com/mmtk/mmtk-dev-env/blob/main/Dockerfile), s
 4. Add the `i686-unknown-linux-gnu` target to the Rust toolchain: [Dockerfile#26](https://github.com/mmtk/mmtk-dev-env/blob/main/Dockerfile#L26)
 
 __NOTE:__ We successfully tried the same procedure on Ubuntu-20.04, but Ubuntu-18.04 is still the version we use daily.
-
-## Supported Hardware
-
-We use an _AMD Ryzen 9 3900X_ Machine with 32GB RAM, running _Ubuntu 18.04.5 LTS (GNU/Linux 5.4.0-47-generic x86_64)_, for MMTk development.
