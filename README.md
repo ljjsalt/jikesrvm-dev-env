@@ -24,8 +24,10 @@ There are 2 choices for the alternative java (providing /usr/bin/java).
 Press <enter> to keep the current choice[*], or type selection number: 2
 $ bin/buildit localhost development
 ```
-Now you should have built JikesRVM.
-
+Now you should have built JikesRVM, use the same container everytime.
+```
+$ docker exec -it name_of_container /bin/bash     # Start a stopped container.
+```
 ## MMTk Dependencies
 
 This repo provides a docker file which lists the dependencies of [MMTk](https://github.com/mmtk/mmtk-core) and its bindings for [V8](https://github.com/mmtk/mmtk-v8), [OpenJDK](https://github.com/mmtk/mmtk-openjdk) and [JikesRVM](https://github.com/mmtk/mmtk-jikesrvm).
