@@ -7,10 +7,13 @@
 
 ```
 $ cd path\to\repo
+
 $ docker build -t name_of_image .        # build an image, replace the name by anything
 $ docker run --name name_of_container -it name_of_image /bin/bash      # run the image in an new container, give it a name
+
 $ git clone https://github.com/JikesRVM/JikesRVM.git              # clone JikesRVM's repository
 $ cd jikesrvm
+
 $ update-alternatives --config java      # change jdk version to jdk 8
 Press <enter> to keep the current choice[*], or type selection number: q
 There are 2 choices for the alternative java (providing /usr/bin/java).
@@ -22,6 +25,7 @@ There are 2 choices for the alternative java (providing /usr/bin/java).
   2            /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java   1081      manual mode
 
 Press <enter> to keep the current choice[*], or type selection number: 2
+
 $ bin/buildit localhost development
 ```
 Now you should have built JikesRVM, use the same container everytime.
