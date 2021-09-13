@@ -2,8 +2,8 @@
 ## Follow the Instructions to build a development environment for [JikesRVM](https://github.com/mmtk/mmtk-jikesrvm).
 
 1. Install Docker on your device.
-2. Open the terminal
-3. Clone the repo.
+2. Open the terminal.
+3. Clone this repo.
 
 ```
 $ cd path\to\repo
