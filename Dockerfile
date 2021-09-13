@@ -2,7 +2,7 @@
 FROM ubuntu:bionic
 
 ARG DEBIAN_FRONTEND="noninteractive" 
-ENV TZ="Australia/Sydney"
+ENV TZ="America/New_York"
 
 RUN apt-get update -y && apt-get upgrade -y
 
