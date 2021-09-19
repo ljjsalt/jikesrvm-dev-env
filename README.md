@@ -28,7 +28,7 @@ There are 2 choices for the alternative java (providing /usr/bin/java).
 
 Press <enter> to keep the current choice[*], or type selection number: 2
 
-$ update-alternatives -s /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java`
+$ update-alternatives -s /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 
 $ bin/buildit localhost development     # now build
 ```
