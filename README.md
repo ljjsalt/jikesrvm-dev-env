@@ -39,7 +39,7 @@ $ bin/buildit localhost development     # now build
 Now you should have built JikesRVM, use the same container everytime.
 ```
 $ docker start name_of_container                # Start a stopped container.
-$ docker exec -it name_of_container /bin/bash
+$ docker exec -it name_of_container /bin/bash   # Connect to a running container.
 ```
 ## MMTk Dependencies
 
