@@ -1,6 +1,7 @@
 # HOW TO BUILD JikesRVM
 ## Follow the Instructions to build a development environment for [JikesRVM](https://github.com/mmtk/mmtk-jikesrvm).
 
+Make sure you are running on a AMD64 device.
 1. Install Docker on your device.
 2. Open the terminal.
 3. Clone this repo.
