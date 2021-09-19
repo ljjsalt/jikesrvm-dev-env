@@ -30,11 +30,15 @@ Press <enter> to keep the current choice[*], or type selection number: 2
 
 $ update-alternatives -s /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
 
+$ touch .ant.properties
+$ echo host.name=x86_64-linux'\n'target.name=x86_64-linux >> .ant.properties
+$ ant -f components/build/components/classpath.xml
 $ bin/buildit localhost development     # now build
 ```
 Now you should have built JikesRVM, use the same container everytime.
 ```
-$ docker exec -it name_of_container /bin/bash     # Start a stopped container.
+$ docker start name_of_container                # Start a stopped container.
+$ docker exec -it name_of_container /bin/bash
 ```
 ## MMTk Dependencies
 
