@@ -29,7 +29,7 @@ There are 2 choices for the alternative java (providing /usr/bin/java).
 
 Press <enter> to keep the current choice[*], or type selection number: 2
 
-$ update-alternatives -s /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+$ update-java-alternatives -s java-1.8.0-openjdk-amd64
 
 $ touch .ant.properties
 $ echo host.name=x86_64-linux'\n'target.name=x86_64-linux >> .ant.properties
